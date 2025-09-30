@@ -1,1 +1,2145 @@
 
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- SEO Meta Tags -->
+    <title>Global Daily News - Latest International News in Multiple Languages</title>
+    <meta name="description" content="Get daily breaking news in 14 languages including English, Bengali, Arabic, Hindi, Urdu, Chinese, Japanese and more. Stay updated with global events.">
+    <meta name="keywords" content="daily news, breaking news, international news, multilingual news, world news, current affairs">
+    <meta name="author" content="Global Daily News">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="googlebot" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Global Daily News - Latest International News">
+    <meta property="og:description" content="Daily breaking news in 14 languages. Stay informed with global events in your preferred language.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://globaldailynews.com">
+    <meta property="og:image" content="https://globaldailynews.com/og-image.jpg">
+    <meta property="og:site_name" content="Global Daily News">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Global Daily News - Latest International News">
+    <meta name="twitter:description" content="Daily breaking news in 14 languages. Stay informed with global events.">
+    <meta name="twitter:image" content="https://globaldailynews.com/twitter-image.jpg">
+    
+    <!-- Additional SEO Tags -->
+    <link rel="canonical" href="https://globaldailynews.com">
+    <meta name="theme-color" content="#2c3e50">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Global Daily News - Latest International News",
+        "description": "Daily breaking news in 14 languages including English, Bengali, Arabic, Hindi, Urdu and more",
+        "datePublished": "2024-01-01T00:00:00+00:00",
+        "dateModified": "2024-01-01T00:00:00+00:00",
+        "author": {
+            "@type": "Organization",
+            "name": "Global Daily News"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Global Daily News",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://globaldailynews.com/logo.png"
+            }
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://globaldailynews.com"
+        }
+    }
+    </script>
+
+    <style>
+        /* CSS Variables for Theme */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --success-color: #27ae60;
+            --warning-color: #f39c12;
+            --text-color: #2c3e50;
+            --text-light: #7f8c8d;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --shadow: 0 10px 30px rgba(0,0,0,0.1);
+            --shadow-hover: 0 20px 40px rgba(0,0,0,0.15);
+            --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --gradient-accent: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --border-radius: 20px;
+            --border-radius-sm: 12px;
+            --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        [data-theme="dark"] {
+            --primary-color: #34495e;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --text-color: #ecf0f1;
+            --text-light: #bdc3c7;
+            --bg-color: #2c3e50;
+            --card-bg: #34495e;
+            --shadow: 0 10px 30px rgba(0,0,0,0.3);
+            --shadow-hover: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        [dir="rtl"] {
+            --text-direction: right;
+        }
+
+        [dir="ltr"] {
+            --text-direction: left;
+        }
+
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            direction: var(--text-direction, ltr);
+            overflow-x: hidden;
+            font-weight: 400;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Skip to main content for accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: var(--primary-color);
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 4px;
+            z-index: 10000;
+            transition: top 0.3s;
+        }
+
+        .skip-link:focus {
+            top: 6px;
+        }
+
+        /* Header Styles */
+        .header {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 1rem 2rem;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(10px);
+        }
+
+        /* Navigation Menu */
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-item {
+            position: relative;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 25px;
+            transition: var(--transition);
+            font-weight: 600;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .nav-link:hover,
+        .nav-link:focus {
+            background: rgba(255,255,255,0.15);
+            transform: translateY(-2px);
+            outline: none;
+        }
+
+        .nav-link.active {
+            background: rgba(255,255,255,0.2);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Live Clock */
+        .live-clock {
+            background: rgba(255,255,255,0.15);
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        /* Language Switcher */
+        .language-switcher {
+            position: relative;
+        }
+
+        .language-btn {
+            background: rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: white;
+            padding: 10px 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            backdrop-filter: blur(10px);
+            transition: var(--transition);
+            border: none;
+            outline: none;
+        }
+
+        .language-btn:hover,
+        .language-btn:focus {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+
+        .language-btn:active {
+            transform: translateY(0);
+        }
+
+        .language-dropdown {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: var(--card-bg);
+            color: var(--text-color);
+            border-radius: var(--border-radius-sm);
+            box-shadow: var(--shadow-hover);
+            min-width: 220px;
+            max-height: 400px;
+            overflow-y: auto;
+            display: none;
+            z-index: 1001;
+            margin-top: 8px;
+            animation: slideDown 0.3s ease;
+        }
+
+        .language-dropdown.show {
+            display: block;
+        }
+
+        .language-option {
+            padding: 12px 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            transition: var(--transition);
+            border: none;
+            background: none;
+            width: 100%;
+            text-align: left;
+            font-size: 0.9rem;
+        }
+
+        .language-option:hover,
+        .language-option:focus {
+            background: var(--secondary-color);
+            color: white;
+            transform: translateX(5px);
+            outline: none;
+        }
+
+        .language-option:last-child {
+            border-bottom: none;
+        }
+
+        /* Mobile Menu Button */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 8px;
+            transition: var(--transition);
+        }
+
+        .mobile-menu-btn:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        /* Mobile Navigation */
+        .mobile-nav {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--gradient-primary);
+            z-index: 999;
+            padding: 2rem;
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+
+        .mobile-nav.active {
+            transform: translateX(0);
+        }
+
+        .mobile-nav-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .mobile-nav-close {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        .mobile-nav-menu {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .mobile-nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 1rem;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transition: var(--transition);
+        }
+
+        .mobile-nav-link:hover,
+        .mobile-nav-link:focus {
+            background: rgba(255,255,255,0.15);
+            outline: none;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+            flex: 1;
+        }
+
+        /* News Card */
+        .news-card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            margin-bottom: 2rem;
+            transition: var(--transition);
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        .news-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .news-header {
+            padding: 2.5rem 2rem;
+            background: var(--gradient-primary);
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .news-header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+            transform: rotate(45deg);
+            animation: shine 3s infinite;
+        }
+
+        .news-date {
+            font-size: 0.95rem;
+            opacity: 0.9;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+        }
+
+        .news-title {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+            font-weight: 800;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .news-image-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .news-image {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            transition: var(--transition);
+            display: block;
+        }
+
+        .news-image:hover {
+            transform: scale(1.05);
+        }
+
+        .image-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            padding: 2rem;
+            color: white;
+            transform: translateY(100%);
+            transition: var(--transition);
+        }
+
+        .news-image-container:hover .image-overlay {
+            transform: translateY(0);
+        }
+
+        .news-content {
+            padding: 2.5rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .news-content p {
+            margin-bottom: 1.5rem;
+            opacity: 0;
+            animation: fadeIn 0.6s ease forwards;
+            animation-delay: calc(var(--delay) * 0.1s);
+        }
+
+        /* Ads Container */
+        .ad-container {
+            background: var(--card-bg);
+            border: 2px dashed var(--secondary-color);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            margin: 2.5rem 0;
+            text-align: center;
+            transition: var(--transition);
+            opacity: 0;
+            animation: fadeIn 0.8s ease 0.5s forwards;
+        }
+
+        .ad-container:hover {
+            border-color: var(--accent-color);
+            transform: scale(1.02);
+        }
+
+        .ad-placeholder {
+            background: var(--gradient-secondary);
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            border-radius: var(--border-radius-sm);
+            font-size: 1.1rem;
+            transition: var(--transition);
+        }
+
+        .ad-placeholder:hover {
+            transform: scale(1.05);
+        }
+
+        /* Archive Section */
+        .archive-section {
+            background: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            margin-top: 2rem;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease 0.3s forwards;
+        }
+
+        .archive-title {
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .archive-list {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .archive-item {
+            padding: 1.25rem;
+            border: 1px solid rgba(0,0,0,0.1);
+            border-radius: var(--border-radius-sm);
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--bg-color);
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .archive-item:hover,
+        .archive-item:focus {
+            background: var(--secondary-color);
+            color: white;
+            transform: translateX(10px);
+            border-color: var(--secondary-color);
+            outline: none;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 3rem 2rem;
+            margin-top: auto;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 1.5rem 0;
+            flex-wrap: wrap;
+        }
+
+        .footer-link {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: var(--transition);
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+
+        .footer-link:hover,
+        .footer-link:focus {
+            color: white;
+            transform: translateY(-2px);
+            background: rgba(255,255,255,0.1);
+            outline: none;
+        }
+
+        .footer-bottom {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .dynamic-year {
+            color: var(--secondary-color);
+            font-weight: 700;
+            animation: colorChange 3s infinite;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { 
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes shine {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(200%) translateY(200%) rotate(45deg); }
+        }
+
+        @keyframes colorChange {
+            0%, 100% { color: var(--secondary-color); }
+            50% { color: var(--accent-color); }
+        }
+
+        /* Loading Spinner */
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4rem;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .spinner {
+            width: 60px;
+            height: 60px;
+            border: 4px solid rgba(52, 152, 219, 0.3);
+            border-top: 4px solid var(--secondary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Theme Toggle */
+        .theme-toggle {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-primary);
+            border: none;
+            border-radius: 50%;
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow);
+            z-index: 1000;
+            transition: var(--transition);
+            outline: none;
+        }
+
+        .theme-toggle:hover,
+        .theme-toggle:focus {
+            transform: scale(1.1) rotate(180deg);
+            outline: 2px solid rgba(255,255,255,0.5);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .nav-menu {
+                gap: 1rem;
+            }
+            
+            .nav-link {
+                padding: 6px 12px;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 1rem;
+            }
+
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+                align-items: stretch;
+            }
+
+            .logo {
+                font-size: 1.2rem;
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            .nav-menu {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .mobile-nav {
+                display: block;
+            }
+
+            .language-switcher {
+                display: none;
+                width: 100%;
+                margin-top: 1rem;
+            }
+
+            .language-switcher.mobile-visible {
+                display: block;
+            }
+
+            .language-dropdown {
+                position: static;
+                width: 100%;
+                margin-top: 0.5rem;
+                box-shadow: none;
+                border: 1px solid rgba(255,255,255,0.2);
+                background: rgba(255,255,255,0.1);
+                backdrop-filter: blur(10px);
+            }
+
+            .language-btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .news-title {
+                font-size: 1.6rem;
+            }
+
+            .news-image {
+                height: 300px;
+            }
+
+            .news-content {
+                padding: 1.5rem;
+            }
+
+            .container {
+                padding: 0 1rem;
+                margin: 1rem auto;
+            }
+
+            .archive-section {
+                padding: 1.5rem;
+            }
+
+            .footer-links {
+                gap: 1rem;
+            }
+
+            .live-clock {
+                margin-top: 0.5rem;
+                order: 3;
+                width: 100%;
+                text-align: center;
+            }
+
+            .theme-toggle {
+                bottom: 20px;
+                right: 20px;
+                width: 45px;
+                height: 45px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .news-title {
+                font-size: 1.4rem;
+            }
+
+            .news-image {
+                height: 250px;
+            }
+
+            .language-btn {
+                padding: 12px 16px;
+                font-size: 1rem;
+            }
+
+            .news-header {
+                padding: 1.5rem 1rem;
+            }
+            
+            .news-content {
+                padding: 1.5rem 1rem;
+            }
+
+            .archive-item {
+                flex-direction: column;
+                gap: 0.5rem;
+                text-align: center;
+            }
+
+            .footer {
+                padding: 2rem 1rem;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+
+        /* iOS Safari specific fixes */
+        @supports (-webkit-touch-callout: none) {
+            .header {
+                padding-top: env(safe-area-inset-top);
+            }
+            
+            .footer {
+                padding-bottom: calc(3rem + env(safe-area-inset-bottom));
+            }
+            
+            .theme-toggle {
+                bottom: calc(30px + env(safe-area-inset-bottom));
+            }
+            
+            .mobile-nav {
+                padding-top: calc(2rem + env(safe-area-inset-top));
+            }
+        }
+
+        /* Android Chrome specific fixes */
+        @media (hover: none) and (pointer: coarse) {
+            .news-card:hover {
+                transform: none;
+            }
+            
+            .archive-item:hover {
+                transform: none;
+            }
+            
+            .ad-container:hover {
+                transform: none;
+            }
+            
+            .language-btn:hover {
+                transform: none;
+            }
+            
+            .theme-toggle:hover {
+                transform: none;
+            }
+            
+            .nav-link:hover {
+                transform: none;
+            }
+            
+            /* Better touch targets */
+            .language-option,
+            .archive-item,
+            .footer-link,
+            .nav-link,
+            .mobile-nav-link {
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        /* High contrast mode support */
+        @media (prefers-contrast: high) {
+            :root {
+                --shadow: 0 0 0 1px black;
+                --shadow-hover: 0 0 0 2px black;
+            }
+            
+            .news-card {
+                border: 1px solid var(--text-color);
+            }
+        }
+
+        /* Reduced motion support */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+            
+            .news-header::before {
+                animation: none;
+            }
+            
+            .live-clock {
+                animation: none;
+            }
+            
+            .dynamic-year {
+                animation: none;
+            }
+        }
+
+        /* Focus visible for better accessibility */
+        .language-btn:focus-visible,
+        .theme-toggle:focus-visible,
+        .archive-item:focus-visible,
+        .footer-link:focus-visible,
+        .language-option:focus-visible,
+        .nav-link:focus-visible,
+        .mobile-nav-link:focus-visible,
+        .mobile-menu-btn:focus-visible,
+        .mobile-nav-close:focus-visible {
+            outline: 2px solid var(--accent-color);
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body itemscope itemtype="https://schema.org/WebPage">
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header Section -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                <div class="logo-icon" aria-hidden="true">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M2 12h20M2 6h20M2 18h20"/>
+                    </svg>
+                </div>
+                <span itemprop="name" data-translate="site_title">Global Daily News</span>
+                <div class="live-clock" id="liveClock">
+                    <span id="currentTime">Loading...</span>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileNav">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 12h18M3 6h18M3 18h18"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Desktop Navigation Menu -->
+            <nav class="nav-menu" role="navigation" aria-label="Main navigation">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active" data-translate="home">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                            <polyline points="9 22 9 12 15 12 15 22"/>
+                        </svg>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#archive" class="nav-link" data-translate="archive_nav">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                        Archive
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#categories" class="nav-link" data-translate="categories">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                        </svg>
+                        Categories
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#trending" class="nav-link" data-translate="trending">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+                            <polyline points="17 6 23 6 23 12"/>
+                        </svg>
+                        Trending
+                    </a>
+                </li>
+            </nav>
+            
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <button class="language-btn" id="languageBtn" aria-haspopup="true" aria-expanded="false">
+                    <span id="currentFlag">🇺🇸</span>
+                    <span id="currentLanguage">English</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 9l6 6 6-6"/>
+                    </svg>
+                </button>
+                <div class="language-dropdown" id="languageDropdown" role="menu" aria-labelledby="languageBtn">
+                    <!-- Language options will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Menu -->
+    <nav class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile navigation">
+        <div class="mobile-nav-header">
+            <div class="logo">
+                <div class="logo-icon" aria-hidden="true">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M2 12h20M2 6h20M2 18h20"/>
+                    </svg>
+                </div>
+                <span data-translate="site_title">Global Daily News</span>
+            </div>
+            <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close navigation menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+        
+        <ul class="mobile-nav-menu">
+            <li>
+                <a href="#home" class="mobile-nav-link active" data-translate="home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                        <polyline points="9 22 9 12 15 12 15 22"/>
+                    </svg>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#archive" class="mobile-nav-link" data-translate="archive_nav">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                        <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                        <line x1="12" y1="22.08" x2="12" y2="12"/>
+                    </svg>
+                    Archive
+                </a>
+            </li>
+            <li>
+                <a href="#categories" class="mobile-nav-link" data-translate="categories">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                    </svg>
+                    Categories
+                </a>
+            </li>
+            <li>
+                <a href="#trending" class="mobile-nav-link" data-translate="trending">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+                        <polyline points="17 6 23 6 23 12"/>
+                    </svg>
+                    Trending
+                </a>
+            </li>
+            <li>
+                <a href="#about" class="mobile-nav-link" data-translate="about">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                        <line x1="12" y1="17" x2="12" y2="17"/>
+                    </svg>
+                    About
+                </a>
+            </li>
+            <li>
+                <a href="#contact" class="mobile-nav-link" data-translate="contact">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    Contact
+                </a>
+            </li>
+        </ul>
+        
+        <!-- Mobile Language Switcher -->
+        <div class="language-switcher mobile-visible" style="margin-top: 2rem;">
+            <button class="language-btn" id="mobileLanguageBtn" aria-haspopup="true" aria-expanded="false">
+                <span id="mobileCurrentFlag">🇺🇸</span>
+                <span id="mobileCurrentLanguage">English</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 9l6 6 6-6"/>
+                </svg>
+            </button>
+            <div class="language-dropdown" id="mobileLanguageDropdown" role="menu" aria-labelledby="mobileLanguageBtn">
+                <!-- Language options will be populated by JavaScript -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container" id="main-content" role="main" tabindex="-1">
+        <!-- Ad Container - Header -->
+        <div class="ad-container">
+            <div class="ad-placeholder" id="headerAd">
+                📢 Adsterra Header Ad - 728x90
+            </div>
+        </div>
+
+        <!-- News Card -->
+        <article class="news-card" itemscope itemtype="https://schema.org/NewsArticle">
+            <div class="news-header">
+                <div class="news-date" id="newsDate" itemprop="datePublished">Loading...</div>
+                <h1 class="news-title" id="newsTitle" itemprop="headline">Loading today's news...</h1>
+            </div>
+            
+            <div class="loading" id="loadingSpinner">
+                <div class="spinner"></div>
+                <div data-translate="loading_news">Loading today's news...</div>
+            </div>
+
+            <div class="news-image-container">
+                <img id="newsImage" class="news-image" style="display: none;" alt="Global Daily News" itemprop="image" loading="lazy">
+                <div class="image-overlay">
+                    <div class="news-date" id="imageDate"></div>
+                    <h3 id="imageTitle"></h3>
+                </div>
+            </div>
+            
+            <div class="news-content" id="newsContent" style="display: none;" itemprop="articleBody">
+                <!-- News content will be loaded here -->
+            </div>
+        </article>
+
+        <!-- Ad Container - In Article -->
+        <div class="ad-container">
+            <div class="ad-placeholder" id="inArticleAd">
+                📱 Adsterra In-Article Ad - 300x250
+            </div>
+        </div>
+
+        <!-- Archive Section -->
+        <section class="archive-section" aria-labelledby="archive-heading">
+            <h2 class="archive-title" id="archive-heading">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                    <line x1="12" y1="22.08" x2="12" y2="12"/>
+                </svg>
+                <span data-translate="archive_title">News Archive</span>
+            </h2>
+            <div class="archive-list" id="archiveList">
+                <!-- Archive items will be populated by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M2 12h20M2 6h20M2 18h20"/>
+                </svg>
+                <span data-translate="site_title">Global Daily News</span>
+            </div>
+            
+            <nav class="footer-links" aria-label="Footer navigation">
+                <a href="/privacy" class="footer-link" data-translate="privacy">Privacy Policy</a>
+                <a href="/terms" class="footer-link" data-translate="terms">Terms of Service</a>
+                <a href="/contact" class="footer-link" data-translate="contact">Contact Us</a>
+                <a href="/about" class="footer-link" data-translate="about">About</a>
+            </nav>
+            
+            <div class="footer-bottom">
+                <p data-translate="footer_text">© <span class="dynamic-year" id="currentYear"></span> Global Daily News. All rights reserved.</p>
+                <p id="footerDateTime" style="margin-top: 0.5rem; opacity: 0.8; font-size: 0.9rem;"></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+    </button>
+
+    <script>
+        // Enhanced Date and Time Functions
+        class DateTimeManager {
+            constructor() {
+                this.updateInterval = null;
+                this.currentLanguage = 'en';
+            }
+
+            init() {
+                this.updateAllDateTime();
+                this.startLiveUpdates();
+                this.updateYear();
+            }
+
+            updateAllDateTime() {
+                this.updateHeaderDateTime();
+                this.updateFooterDateTime();
+                this.updateLiveClock();
+            }
+
+            updateHeaderDateTime() {
+                const now = new Date();
+                const dateTimeElement = document.getElementById('newsDate');
+                if (dateTimeElement) {
+                    const options = {
+                        weekday: 'long',
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric',
+                        timeZone: this.getTimezoneForLanguage(this.currentLanguage)
+                    };
+                    dateTimeElement.textContent = now.toLocaleDateString(this.currentLanguage, options);
+                }
+            }
+
+            updateFooterDateTime() {
+                const now = new Date();
+                const footerElement = document.getElementById('footerDateTime');
+                if (footerElement) {
+                    const dateOptions = {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric',
+                        timeZone: this.getTimezoneForLanguage(this.currentLanguage)
+                    };
+                    
+                    const timeOptions = {
+                        hour: '2-digit',
+                        minute: '2-digit',
+                        second: '2-digit',
+                        hour12: true,
+                        timeZone: this.getTimezoneForLanguage(this.currentLanguage)
+                    };
+
+                    const dateStr = now.toLocaleDateString(this.currentLanguage, dateOptions);
+                    const timeStr = now.toLocaleTimeString(this.currentLanguage, timeOptions);
+                    footerElement.textContent = `${dateStr} • ${timeStr}`;
+                }
+            }
+
+            updateLiveClock() {
+                const now = new Date();
+                const clockElement = document.getElementById('currentTime');
+                if (clockElement) {
+                    const options = {
+                        hour: '2-digit',
+                        minute: '2-digit',
+                        second: '2-digit',
+                        hour12: true,
+                        timeZone: this.getTimezoneForLanguage(this.currentLanguage)
+                    };
+                    clockElement.textContent = now.toLocaleTimeString(this.currentLanguage, options);
+                }
+            }
+
+            updateYear() {
+                const yearElement = document.getElementById('currentYear');
+                if (yearElement) {
+                    yearElement.textContent = new Date().getFullYear();
+                }
+            }
+
+            getTimezoneForLanguage(lang) {
+                const timezones = {
+                    'en': 'UTC',
+                    'bn': 'Asia/Dhaka',
+                    'ar': 'Asia/Riyadh',
+                    'hi': 'Asia/Kolkata',
+                    'ur': 'Asia/Karachi',
+                    'fa': 'Asia/Tehran',
+                    'tr': 'Europe/Istanbul',
+                    'th': 'Asia/Bangkok',
+                    'zh': 'Asia/Shanghai',
+                    'ja': 'Asia/Tokyo',
+                    'ko': 'Asia/Seoul',
+                    'ms': 'Asia/Kuala_Lumpur',
+                    'id': 'Asia/Jakarta',
+                    'vi': 'Asia/Ho_Chi_Minh'
+                };
+                return timezones[lang] || 'UTC';
+            }
+
+            startLiveUpdates() {
+                this.updateInterval = setInterval(() => {
+                    this.updateAllDateTime();
+                }, 1000);
+            }
+
+            setLanguage(lang) {
+                this.currentLanguage = lang;
+                this.updateAllDateTime();
+            }
+
+            destroy() {
+                if (this.updateInterval) {
+                    clearInterval(this.updateInterval);
+                }
+            }
+        }
+
+        // Application Configuration
+        const CONFIG = {
+            SUPPORTED_LANGUAGES: [
+                { code: 'en', name: 'English', flag: '🇺🇸', dir: 'ltr' },
+                { code: 'bn', name: 'বাংলা', flag: '🇧🇩', dir: 'ltr' },
+                { code: 'ar', name: 'العربية', flag: '🇸🇦', dir: 'rtl' },
+                { code: 'hi', name: 'हिन्दी', flag: '🇮🇳', dir: 'ltr' },
+                { code: 'ur', name: 'اردو', flag: '🇵🇰', dir: 'rtl' },
+                { code: 'fa', name: 'فارسی', flag: '🇮🇷', dir: 'rtl' },
+                { code: 'tr', name: 'Türkçe', flag: '🇹🇷', dir: 'ltr' },
+                { code: 'th', name: 'ไทย', flag: '🇹🇭', dir: 'ltr' },
+                { code: 'zh', name: '中文', flag: '🇨🇳', dir: 'ltr' },
+                { code: 'ja', name: '日本語', flag: '🇯🇵', dir: 'ltr' },
+                { code: 'ko', name: '한국어', flag: '🇰🇷', dir: 'ltr' },
+                { code: 'ms', name: 'Bahasa Melayu', flag: '🇲🇾', dir: 'ltr' },
+                { code: 'id', name: 'Bahasa Indonesia', flag: '🇮🇩', dir: 'ltr' },
+                { code: 'vi', name: 'Tiếng Việt', flag: '🇻🇳', dir: 'ltr' }
+            ],
+            DEFAULT_LANGUAGE: 'en'
+        };
+
+        // Enhanced Translations
+        const TRANSLATIONS = {
+            en: {
+                site_title: "Global Daily News",
+                home: "Home",
+                archive_nav: "Archive",
+                categories: "Categories",
+                trending: "Trending",
+                about: "About",
+                contact: "Contact",
+                loading_news: "Loading today's news...",
+                no_news: "No news available for today",
+                footer_text: "© [year] Global Daily News. All rights reserved.",
+                archive_title: "News Archive",
+                read_more: "Read More",
+                today: "Today",
+                updated: "Updated",
+                privacy: "Privacy Policy",
+                terms: "Terms of Service"
+            },
+            bn: {
+                site_title: "গ্লোবাল দৈনিক খবর",
+                home: "হোম",
+                archive_nav: "আর্কাইভ",
+                categories: "বিভাগসমূহ",
+                trending: "ট্রেন্ডিং",
+                about: "সম্পর্কে",
+                contact: "যোগাযোগ",
+                loading_news: "আজকের খবর লোড হচ্ছে...",
+                no_news: "আজকের জন্য কোন খবর নেই",
+                footer_text: "© [year] গ্লোবাল দৈনিক খবর। সর্বস্বত্ব সংরক্ষিত।",
+                archive_title: "খবরের আর্কাইভ",
+                read_more: "আরও পড়ুন",
+                today: "আজ",
+                updated: "আপডেট করা হয়েছে",
+                privacy: "গোপনীয়তা নীতি",
+                terms: "সেবার শর্তাবলী"
+            },
+            ar: {
+                site_title: "الأخبار العالمية اليومية",
+                home: "الرئيسية",
+                archive_nav: "الأرشيف",
+                categories: "الفئات",
+                trending: "الرائج",
+                about: "حول",
+                contact: "اتصل بنا",
+                loading_news: "جاري تحميل أخبار اليوم...",
+                no_news: "لا توجد أخبار متاحة لليوم",
+                footer_text: "© [year] الأخبار العالمية اليومية. جميع الحقوق محفوظة.",
+                archive_title: "أرشيف الأخبار",
+                read_more: "اقرأ المزيد",
+                today: "اليوم",
+                updated: "تم التحديث",
+                privacy: "سياسة الخصوصية",
+                terms: "شروط الخدمة"
+            },
+            hi: {
+                site_title: "ग्लोबल दैनिक समाचार",
+                home: "होम",
+                archive_nav: "आर्काइव",
+                categories: "श्रेणियाँ",
+                trending: "ट्रेंडिंग",
+                about: "हमारे बारे में",
+                contact: "संपर्क करें",
+                loading_news: "आज की खबर लोड हो रही है...",
+                no_news: "आज के लिए कोई खबर उपलब्ध नहीं है",
+                footer_text: "© [year] ग्लोबल दैनिक समाचार। सर्वाधिकार सुरक्षित।",
+                archive_title: "समाचार संग्रह",
+                read_more: "और पढ़ें",
+                today: "आज",
+                updated: "अपडेट किया गया",
+                privacy: "गोपनीयता नीति",
+                terms: "सेवा की शर्तें"
+            },
+            ur: {
+                site_title: "گلوبل روزانہ خبریں",
+                home: "ہوم",
+                archive_nav: "آرکائیو",
+                categories: "زمرے",
+                trending: "ٹرینڈنگ",
+                about: "ہمارے بارے میں",
+                contact: "رابطہ کریں",
+                loading_news: "آج کی خبریں لوڈ ہو رہی ہیں...",
+                no_news: "آج کے لیے کوئی خبر دستیاب نہیں ہے",
+                footer_text: "© [year] گلوبل روزانہ خبریں۔ جملہ حقوق محفوظ ہیں۔",
+                archive_title: "خبروں کا آرکائیو",
+                read_more: "مزید پڑھیں",
+                today: "آج",
+                updated: "اپ ڈیٹ کیا گیا",
+                privacy: "پرائیویسی پالیسی",
+                terms: "سروس کی شرائط"
+            }
+        };
+
+        // Main Application Class
+        class NewsApplication {
+            constructor() {
+                this.currentLanguage = CONFIG.DEFAULT_LANGUAGE;
+                this.currentNews = null;
+                this.dateTimeManager = new DateTimeManager();
+                this.isDarkTheme = false;
+                this.isInitialized = false;
+                this.isMobileMenuOpen = false;
+            }
+
+            async init() {
+                if (this.isInitialized) return;
+                
+                try {
+                    await this.initializeModules();
+                    this.isInitialized = true;
+                    console.log('🚀 Application initialized successfully');
+                } catch (error) {
+                    console.error('❌ Application initialization failed:', error);
+                    this.showError('Failed to initialize application');
+                }
+            }
+
+            async initializeModules() {
+                // Initialize core modules
+                this.initializeNavigation();
+                this.initializeLanguageSwitcher();
+                this.loadLanguagePreference();
+                this.initializeThemeToggle();
+                this.initializeAdsterraAds();
+                
+                // Load content
+                await Promise.all([
+                    this.loadTodaysNews(),
+                    this.loadNewsArchive()
+                ]);
+                
+                // Initialize date time manager
+                this.dateTimeManager.init();
+                this.checkFirebaseStatus();
+                
+                // Update structured data
+                this.updateStructuredData();
+
+                // Set focus to main content for accessibility
+                this.setInitialFocus();
+            }
+
+            initializeNavigation() {
+                // Desktop navigation
+                const navLinks = document.querySelectorAll('.nav-link');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        // Remove active class from all links
+                        navLinks.forEach(l => l.classList.remove('active'));
+                        // Add active class to clicked link
+                        link.classList.add('active');
+                    });
+                });
+
+                // Mobile navigation
+                this.initializeMobileNavigation();
+            }
+
+            initializeMobileNavigation() {
+                const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+                const mobileNav = document.getElementById('mobileNav');
+                const mobileNavClose = document.getElementById('mobileNavClose');
+                const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+                if (!mobileMenuBtn || !mobileNav) return;
+
+                // Open mobile menu
+                mobileMenuBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    this.openMobileMenu();
+                });
+
+                // Close mobile menu
+                mobileNavClose.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    this.closeMobileMenu();
+                });
+
+                // Close mobile menu when clicking on links
+                mobileNavLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        this.closeMobileMenu();
+                    });
+                });
+
+                // Close mobile menu when clicking outside
+                document.addEventListener('click', (e) => {
+                    if (!mobileNav.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+                        this.closeMobileMenu();
+                    }
+                });
+
+                // Close mobile menu on escape key
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape') {
+                        this.closeMobileMenu();
+                    }
+                });
+            }
+
+            openMobileMenu() {
+                const mobileNav = document.getElementById('mobileNav');
+                const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+                
+                if (mobileNav) {
+                    mobileNav.classList.add('active');
+                    mobileMenuBtn.setAttribute('aria-expanded', 'true');
+                    document.body.style.overflow = 'hidden';
+                    this.isMobileMenuOpen = true;
+                }
+            }
+
+            closeMobileMenu() {
+                const mobileNav = document.getElementById('mobileNav');
+                const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+                
+                if (mobileNav) {
+                    mobileNav.classList.remove('active');
+                    mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = '';
+                    this.isMobileMenuOpen = false;
+                }
+            }
+
+            initializeLanguageSwitcher() {
+                this.initializeDesktopLanguageSwitcher();
+                this.initializeMobileLanguageSwitcher();
+            }
+
+            initializeDesktopLanguageSwitcher() {
+                const languageBtn = document.getElementById('languageBtn');
+                const languageDropdown = document.getElementById('languageDropdown');
+
+                if (!languageBtn || !languageDropdown) return;
+
+                this.populateLanguageDropdown(languageDropdown);
+
+                languageBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const isExpanded = languageDropdown.classList.toggle('show');
+                    languageBtn.setAttribute('aria-expanded', isExpanded.toString());
+                });
+
+                // Close dropdown when clicking outside on desktop
+                if (window.innerWidth > 768) {
+                    document.addEventListener('click', (e) => {
+                        if (!languageDropdown.contains(e.target) && !languageBtn.contains(e.target)) {
+                            languageDropdown.classList.remove('show');
+                            languageBtn.setAttribute('aria-expanded', 'false');
+                        }
+                    });
+                }
+
+                // Close dropdown on escape key
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape') {
+                        languageDropdown.classList.remove('show');
+                        languageBtn.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            }
+
+            initializeMobileLanguageSwitcher() {
+                const mobileLanguageBtn = document.getElementById('mobileLanguageBtn');
+                const mobileLanguageDropdown = document.getElementById('mobileLanguageDropdown');
+
+                if (!mobileLanguageBtn || !mobileLanguageDropdown) return;
+
+                this.populateLanguageDropdown(mobileLanguageDropdown);
+
+                mobileLanguageBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const isExpanded = mobileLanguageDropdown.classList.toggle('show');
+                    mobileLanguageBtn.setAttribute('aria-expanded', isExpanded.toString());
+                });
+
+                // Close dropdown when clicking outside
+                document.addEventListener('click', (e) => {
+                    if (!mobileLanguageDropdown.contains(e.target) && !mobileLanguageBtn.contains(e.target)) {
+                        mobileLanguageDropdown.classList.remove('show');
+                        mobileLanguageBtn.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            }
+
+            populateLanguageDropdown(dropdownElement) {
+                // Clear existing options
+                dropdownElement.innerHTML = '';
+
+                CONFIG.SUPPORTED_LANGUAGES.forEach(lang => {
+                    const option = document.createElement('button');
+                    option.className = 'language-option';
+                    option.setAttribute('role', 'menuitem');
+                    option.setAttribute('tabindex', '0');
+                    option.setAttribute('data-lang', lang.code);
+                    option.innerHTML = `
+                        <span>${lang.flag}</span>
+                        <span>${lang.name}</span>
+                    `;
+                    option.addEventListener('click', () => {
+                        this.switchLanguage(lang.code);
+                        this.closeMobileMenu();
+                    });
+                    option.addEventListener('keypress', (e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            this.switchLanguage(lang.code);
+                            this.closeMobileMenu();
+                        }
+                    });
+                    dropdownElement.appendChild(option);
+                });
+            }
+
+            switchLanguage(langCode) {
+                try {
+                    this.currentLanguage = langCode;
+                    this.saveLanguagePreference();
+                    this.updateUIForLanguage();
+                    this.dateTimeManager.setLanguage(langCode);
+                    
+                    // Reload content with new language
+                    Promise.all([
+                        this.loadTodaysNews(),
+                        this.loadNewsArchive()
+                    ]).catch(error => {
+                        console.error('Error reloading content:', error);
+                    });
+                    
+                    this.updateStructuredData();
+                } catch (error) {
+                    console.error('Error switching language:', error);
+                }
+            }
+
+            saveLanguagePreference() {
+                try {
+                    localStorage.setItem('preferredLanguage', this.currentLanguage);
+                    localStorage.setItem('preferredTheme', this.isDarkTheme ? 'dark' : 'light');
+                } catch (error) {
+                    console.warn('Could not save preferences to localStorage:', error);
+                }
+            }
+
+            loadLanguagePreference() {
+                try {
+                    const savedLang = localStorage.getItem('preferredLanguage');
+                    const savedTheme = localStorage.getItem('preferredTheme');
+                    const browserLang = navigator.language.split('-')[0];
+                    
+                    if (savedLang && CONFIG.SUPPORTED_LANGUAGES.find(l => l.code === savedLang)) {
+                        this.currentLanguage = savedLang;
+                    } else if (CONFIG.SUPPORTED_LANGUAGES.find(l => l.code === browserLang)) {
+                        this.currentLanguage = browserLang;
+                    } else {
+                        // Fallback to default language
+                        this.currentLanguage = CONFIG.DEFAULT_LANGUAGE;
+                    }
+
+                    this.isDarkTheme = savedTheme === 'dark';
+                    this.applyTheme();
+                    this.updateUIForLanguage();
+                } catch (error) {
+                    console.warn('Could not load preferences from localStorage:', error);
+                    this.currentLanguage = CONFIG.DEFAULT_LANGUAGE;
+                    this.updateUIForLanguage();
+                }
+            }
+
+            updateUIForLanguage() {
+                try {
+                    const langConfig = CONFIG.SUPPORTED_LANGUAGES.find(l => l.code === this.currentLanguage);
+                    if (!langConfig) {
+                        console.warn('Language config not found for:', this.currentLanguage);
+                        return;
+                    }
+                    
+                    // Update document direction and language
+                    document.documentElement.dir = langConfig.dir;
+                    document.documentElement.lang = this.currentLanguage;
+                    
+                    // Update language switcher buttons
+                    const currentFlag = document.getElementById('currentFlag');
+                    const currentLanguage = document.getElementById('currentLanguage');
+                    const mobileCurrentFlag = document.getElementById('mobileCurrentFlag');
+                    const mobileCurrentLanguage = document.getElementById('mobileCurrentLanguage');
+                    
+                    if (currentFlag) currentFlag.textContent = langConfig.flag;
+                    if (currentLanguage) currentLanguage.textContent = langConfig.name;
+                    if (mobileCurrentFlag) mobileCurrentFlag.textContent = langConfig.flag;
+                    if (mobileCurrentLanguage) mobileCurrentLanguage.textContent = langConfig.name;
+                    
+                    // Update static texts
+                    document.querySelectorAll('[data-translate]').forEach(element => {
+                        const key = element.getAttribute('data-translate');
+                        if (TRANSLATIONS[this.currentLanguage] && TRANSLATIONS[this.currentLanguage][key]) {
+                            let text = TRANSLATIONS[this.currentLanguage][key];
+                            text = text.replace('[year]', new Date().getFullYear());
+                            element.textContent = text;
+                        } else if (TRANSLATIONS['en'] && TRANSLATIONS['en'][key]) {
+                            // Fallback to English
+                            let text = TRANSLATIONS['en'][key];
+                            text = text.replace('[year]', new Date().getFullYear());
+                            element.textContent = text;
+                        }
+                    });
+                } catch (error) {
+                    console.error('Error updating UI for language:', error);
+                }
+            }
+
+            setInitialFocus() {
+                // Set focus to main content for screen readers
+                const mainContent = document.getElementById('main-content');
+                if (mainContent) {
+                    mainContent.focus();
+                }
+            }
+
+            updateStructuredData() {
+                try {
+                    // Update language in structured data
+                    const langMap = {
+                        'en': 'en-US',
+                        'bn': 'bn-BD',
+                        'ar': 'ar-SA',
+                        'hi': 'hi-IN',
+                        'ur': 'ur-PK',
+                        'fa': 'fa-IR',
+                        'tr': 'tr-TR',
+                        'th': 'th-TH',
+                        'zh': 'zh-CN',
+                        'ja': 'ja-JP',
+                        'ko': 'ko-KR',
+                        'ms': 'ms-MY',
+                        'id': 'id-ID',
+                        'vi': 'vi-VN'
+                    };
+                    
+                    document.documentElement.lang = langMap[this.currentLanguage] || 'en-US';
+                } catch (error) {
+                    console.error('Error updating structured data:', error);
+                }
+            }
+
+            initializeThemeToggle() {
+                const themeToggle = document.getElementById('themeToggle');
+                if (!themeToggle) return;
+
+                themeToggle.addEventListener('click', () => {
+                    this.isDarkTheme = !this.isDarkTheme;
+                    this.applyTheme();
+                    this.saveLanguagePreference();
+                });
+
+                // Add keyboard support
+                themeToggle.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        this.isDarkTheme = !this.isDarkTheme;
+                        this.applyTheme();
+                        this.saveLanguagePreference();
+                    }
+                });
+            }
+
+            applyTheme() {
+                try {
+                    if (this.isDarkTheme) {
+                        document.documentElement.setAttribute('data-theme', 'dark');
+                    } else {
+                        document.documentElement.removeAttribute('data-theme');
+                    }
+                } catch (error) {
+                    console.error('Error applying theme:', error);
+                }
+            }
+
+            async loadTodaysNews() {
+                const loadingSpinner = document.getElementById('loadingSpinner');
+                const newsTitle = document.getElementById('newsTitle');
+                const newsImage = document.getElementById('newsImage');
+                const newsContent = document.getElementById('newsContent');
+
+                if (!loadingSpinner || !newsTitle) return;
+
+                try {
+                    loadingSpinner.style.display = 'flex';
+                    newsTitle.textContent = TRANSLATIONS[this.currentLanguage]?.loading_news || 'Loading...';
+                    if (newsImage) newsImage.style.display = 'none';
+                    if (newsContent) newsContent.style.display = 'none';
+
+                    await this.loadMockNews();
+                } catch (error) {
+                    console.error('Error loading news:', error);
+                    this.showError('Failed to load news');
+                    await this.loadMockNews(); // Fallback to mock data
+                } finally {
+                    setTimeout(() => {
+                        if (loadingSpinner) loadingSpinner.style.display = 'none';
+                    }, 1000);
+                }
+            }
+
+            async loadMockNews() {
+                try {
+                    const mockNews = {
+                        en: {
+                            title: "Revolutionary AI Breakthrough Transforms Global Healthcare",
+                            date: new Date().toLocaleDateString('en', { 
+                                weekday: 'long', 
+                                year: 'numeric', 
+                                month: 'long', 
+                                day: 'numeric' 
+                            }),
+                            image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800",
+                            content: `
+                                <p style="--delay: 1">In a groundbreaking development, scientists have unveiled an artificial intelligence system that can diagnose diseases with unprecedented accuracy. This revolutionary technology promises to transform global healthcare accessibility.</p>
+                                <p style="--delay: 2">The AI system, developed after years of research, demonstrates remarkable capabilities in early detection of various medical conditions, potentially saving millions of lives worldwide.</p>
+                                <p style="--delay: 3">Healthcare professionals worldwide are hailing this innovation as a major step forward in medical technology, with implications for both developed and developing nations.</p>
+                            `
+                        },
+                        bn: {
+                            title: "বিপ্লবী এআই উদ্ভাবন বিশ্ব স্বাস্থ্য ব্যবস্থাকে রূপান্তরিত করেছে",
+                            date: new Date().toLocaleDateString('bn', { 
+                                weekday: 'long', 
+                                year: 'numeric', 
+                                month: 'long', 
+                                day: 'numeric' 
+                            }),
+                            image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800",
+                            content: `
+                                <p style="--delay: 1">এক যুগান্তকারী উন্নয়নে, বিজ্ঞানীরা একটি কৃত্রিম বুদ্ধিমত্তা সিস্টেম উন্মোচন করেছেন যা অভূতপূর্ব নির্ভুলতার সাথে রোগ নির্ণয় করতে পারে। এই বিপ্লবী প্রযুক্তি বিশ্বব্যাপী স্বাস্থ্যসেবার প্রবেশযোগ্যতা রূপান্তরের প্রতিশ্রুতি দেয়।</p>
+                                <p style="--delay: 2">বছরব্যাপী গবেষণার পর উন্নত এই এআই সিস্টেমটি বিভিন্ন চিকিৎসা অবস্থার প্রাথমিক সনাক্তকরণে লক্ষণীয় ক্ষমতা প্রদর্শন করে, যা বিশ্বব্যাপী লক্ষ লক্ষ জীবন বাঁচাতে পারে।</p>
+                                <p style="--delay: 3">বিশ্বব্যাপী স্বাস্থ্য পেশাদাররা এই উদ্ভাবনকে চিকিৎসা প্রযুক্তির একটি বড় পদক্ষেপ হিসাবে প্রশংসা করছেন, যা উন্নত এবং উন্নয়নশীল উভয় দেশের জন্যই প্রভাব ফেলে।</p>
+                            `
+                        }
+                    };
+
+                    const news = mockNews[this.currentLanguage] || mockNews['en'];
+                    this.displayNews(news);
+                } catch (error) {
+                    console.error('Error loading mock news:', error);
+                    throw error;
+                }
+            }
+
+            displayNews(news) {
+                try {
+                    const newsTitle = document.getElementById('newsTitle');
+                    const newsDate = document.getElementById('newsDate');
+                    const newsImage = document.getElementById('newsImage');
+                    const newsContent = document.getElementById('newsContent');
+                    const imageTitle = document.getElementById('imageTitle');
+                    const imageDate = document.getElementById('imageDate');
+
+                    if (newsTitle) newsTitle.textContent = news.title;
+                    if (newsDate) newsDate.textContent = news.date;
+                    if (imageTitle) imageTitle.textContent = news.title;
+                    if (imageDate) imageDate.textContent = news.date;
+                    
+                    if (newsImage) {
+                        newsImage.src = news.image;
+                        newsImage.alt = news.title;
+                        newsImage.style.display = 'block';
+                    }
+                    
+                    if (newsContent) {
+                        newsContent.innerHTML = news.content;
+                        newsContent.style.display = 'block';
+                    }
+
+                    this.currentNews = news;
+
+                    // Update meta tags for SEO
+                    this.updateSEOMetaTags(news);
+
+                    // Trigger animations
+                    setTimeout(() => {
+                        if (newsContent) newsContent.style.opacity = '1';
+                    }, 500);
+                } catch (error) {
+                    console.error('Error displaying news:', error);
+                }
+            }
+
+            updateSEOMetaTags(news) {
+                try {
+                    // Update meta title and description
+                    document.title = `${news.title} - Global Daily News`;
+                    
+                    // Update meta description
+                    const metaDescription = document.querySelector('meta[name="description"]');
+                    if (metaDescription) {
+                        metaDescription.content = `${news.title}. Read more on Global Daily News.`;
+                    }
+
+                    // Update Open Graph tags
+                    this.updateOpenGraphTags(news);
+                } catch (error) {
+                    console.error('Error updating SEO meta tags:', error);
+                }
+            }
+
+            updateOpenGraphTags(news) {
+                try {
+                    const ogTitle = document.querySelector('meta[property="og:title"]');
+                    const ogDescription = document.querySelector('meta[property="og:description"]');
+                    const ogImage = document.querySelector('meta[property="og:image"]');
+
+                    if (ogTitle) ogTitle.content = news.title;
+                    if (ogDescription) ogDescription.content = `${news.title} - Global Daily News`;
+                    if (ogImage) ogImage.content = news.image;
+                } catch (error) {
+                    console.error('Error updating Open Graph tags:', error);
+                }
+            }
+
+            async loadNewsArchive() {
+                const archiveList = document.getElementById('archiveList');
+                if (!archiveList) return;
+
+                try {
+                    const archiveData = [
+                        { date: '2024-12-19', title: 'Climate Summit Reaches Historic Agreement' },
+                        { date: '2024-12-18', title: 'Breakthrough in Quantum Computing' },
+                        { date: '2024-12-17', title: 'Global Economic Forum Concludes' },
+                        { date: '2024-12-16', title: 'Space Exploration Milestone Achieved' },
+                        { date: '2024-12-15', title: 'Renewable Energy Records Broken' }
+                    ];
+
+                    let archiveHTML = '';
+                    archiveData.forEach((item, index) => {
+                        const formattedDate = new Date(item.date).toLocaleDateString(this.currentLanguage);
+                        archiveHTML += `
+                            <button class="archive-item" style="animation-delay: ${index * 0.1}s" onclick="app.loadArchivedNews('${item.date}')" tabindex="0" role="button" aria-label="Read news from ${formattedDate}">
+                                <div>
+                                    <strong>${formattedDate}</strong> - ${item.title}
+                                </div>
+                                <span style="color: var(--secondary-color); font-weight: 600;">
+                                    ${TRANSLATIONS[this.currentLanguage]?.read_more || 'Read More'} →
+                                </span>
+                            </button>
+                        `;
+                    });
+
+                    archiveList.innerHTML = archiveHTML;
+                } catch (error) {
+                    console.error('Error loading archive:', error);
+                    archiveList.innerHTML = '<p>Error loading archive</p>';
+                }
+            }
+
+            loadArchivedNews(date) {
+                console.log(`Loading archived news from ${date}`);
+                // Implementation for loading archived news from Firebase
+            }
+
+            initializeAdsterraAds() {
+                try {
+                    const ads = [
+                        { id: 'headerAd', type: 'Header Banner', size: '728x90' },
+                        { id: 'inArticleAd', type: 'In-Article', size: '300x250' }
+                    ];
+
+                    ads.forEach(ad => {
+                        const element = document.getElementById(ad.id);
+                        if (element) {
+                            element.innerHTML = `
+                                <div style="padding: 1rem; border-radius: 12px; background: var(--gradient-accent); color: white; font-weight: 600;">
+                                    🚀 ${ad.type} Ad • ${ad.size}
+                                    <br>
+                                    <small>${new Date().toLocaleTimeString(this.currentLanguage)}</small>
+                                </div>
+                            `;
+                        }
+                    });
+                } catch (error) {
+                    console.error('Error initializing ads:', error);
+                }
+            }
+
+            checkFirebaseStatus() {
+                const checkInterval = setInterval(() => {
+                    if (window.firebaseApp && window.firebaseDB) {
+                        console.log('✅ Firebase connected successfully');
+                        clearInterval(checkInterval);
+                    }
+                }, 1000);
+
+                // Timeout after 10 seconds
+                setTimeout(() => {
+                    clearInterval(checkInterval);
+                    if (!window.firebaseApp) {
+                        console.warn('⚠️ Firebase connection timeout');
+                    }
+                }, 10000);
+            }
+
+            showError(message) {
+                console.error('Application Error:', message);
+                // You can implement a user-friendly error display here
+            }
+        }
+
+        // Initialize application
+        const app = new NewsApplication();
+
+        // Make app globally available
+        window.app = app;
+
+        // Handle window resize for mobile menu
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                app.closeMobileMenu();
+            }
+        });
+
+        // Start when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', () => {
+                app.init().catch(error => {
+                    console.error('Failed to initialize app:', error);
+                });
+            });
+        } else {
+            app.init().catch(error => {
+                console.error('Failed to initialize app:', error);
+            });
+        }
+
+        // Handle page visibility changes
+        document.addEventListener('visibilitychange', () => {
+            if (!document.hidden) {
+                app.dateTimeManager.updateAllDateTime();
+            }
+        });
+
+        // Handle online/offline status
+        window.addEventListener('online', () => {
+            console.log('🌐 Connection restored');
+        });
+
+        window.addEventListener('offline', () => {
+            console.log('⚠️ Connection lost - working offline');
+        });
+
+        // Error boundary for unhandled errors
+        window.addEventListener('error', (event) => {
+            console.error('Global error:', event.error);
+        });
+
+        window.addEventListener('unhandledrejection', (event) => {
+            console.error('Unhandled promise rejection:', event.reason);
+        });
+    </script>
+</body>
+</html>
